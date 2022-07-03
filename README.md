@@ -1,4 +1,4 @@
-### Praktikum Pertemuan 14
+### Praktikum
 ### Mata Kuliah Pemrograman Mobile
 ```
 Nama                    : Abdul Majid
