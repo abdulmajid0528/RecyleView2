@@ -58,6 +58,115 @@
                     android:textColor="@color/clBlue"
                     />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textName"
+                    >
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic1"
+                        android:text="Universitas Pelita Bangsa"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic3"
+                        android:text="TI.19.D3"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic2"
+                        android:text="abdul_majid@mhs.pelitabangsa.ac.id"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic5"
+                        android:text="0812-2139-5328"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic4"
+                        android:text="Kp.Bojong Koneng Ds.Telaga Murni Kec.Cikarang Barat - Kab.Bekasi"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btnback"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_blue"
+                        android:text="Back to Main Page"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+
+                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

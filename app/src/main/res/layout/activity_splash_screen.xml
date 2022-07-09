@@ -10,7 +10,7 @@
         android:id="@+id/logosplash"
         android:layout_width="190dp"
         android:layout_height="190dp"
-        android:src="@drawable/logoMadrid"
+        android:src="@drawable/logomadrid"
         android:layout_centerInParent="true"
         />
     <TextView

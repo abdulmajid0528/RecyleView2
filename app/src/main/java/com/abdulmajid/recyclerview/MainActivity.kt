@@ -1,8 +1,11 @@
 package com.abdulmajid.recyclerview
 
 import android.app.Dialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.Window
 import android.widget.Button
 import android.widget.ImageView
@@ -27,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         listPemain.add(Pemain("Zinedine Yazid Zidane",R.drawable.zidan,"Pelatih","1,85 m","Marseille (Prancis)","23 Juni 1972"))
 
         binding.list.adapter = AdapterTeamBola(this,listPemain,object : AdapterTeamBola.OnClickListener {
-            override fun detailData(item: Pemain) {
+            override fun detailData(item: Pemain?) {
                 Dialog(this@MainActivity).apply {
                     requestWindowFeature(Window.FEATURE_NO_TITLE)
                     setCancelable(true)
@@ -44,19 +47,38 @@ class MainActivity : AppCompatActivity() {
                     val btn = this.findViewById<Button>(R.id.btnClose)
 
                     image.setImageResource(item?.foto?:0)
-                    nama.text = "${item.nama}"
-                    posisi.text = "${item.posisi}"
-                    tinggi.text = "${item.tinggi}"
-                    tempatlahir.text = "${item.tempatlahir}"
-                    tgllahir.text = "${item.tgllahir}"
+                    nama.text = "${item?.nama}"
+                    posisi.text = "${item?.posisi}"
+                    tinggi.text = "${item?.tinggi}"
+                    tempatlahir.text = "${item?.tempatlahir}"
+                    tgllahir.text = "${item?.tgllahir}"
 
-                    btn.setOnClickListener(
+                    btn.setOnClickListener {
                         this.dismiss()
-                    )
-                }
+                    }
+                }.show()
             }
 
         })
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        setMode(item.itemId)
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun  setMode(selectedMode: Int){
+        when (selectedMode){
+            R.id.myprofile -> {
+                val intent = Intent(this,Profil::class.java)
+                startActivity(intent)
+            }
+        }
     }
 }
